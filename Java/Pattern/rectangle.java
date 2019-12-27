@@ -1,7 +1,7 @@
-import java.util.*;
+//import java.util.*;
 
 class rectangle {
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         // Scanner scan = new Scanner(System.in);
 
         System.out.println("Give input lenght and breadth: ");
@@ -20,8 +20,8 @@ class rectangle {
 
         // int[][] hollowRect = new int[row][col];
 
-        int row = 5;
-        int col = 5;
+        final int row = 5;
+        final int col = 5;
 
         for (int i = 0; i < row; i++) {
             for (int j = 0; j < col; j++) {
@@ -34,12 +34,5 @@ class rectangle {
             }
             System.out.print("\n");
         }
-
     }
 }
-
-33333
-32223
-32123
-32223
-33333
