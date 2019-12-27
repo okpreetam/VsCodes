@@ -1,0 +1,94 @@
+Project: Into To Python, Tag: Input-Output , Difficulty: Normal 
+
+
+Q. What will be the output of the following command(s) in Python?
+
+(1) >>>"77".zfill(6)
+
+A) 77000000
+B) 000000
+C) 00000077
+D) 000077
+
+Ans: (D) The output is printed as a string with total width 6 and zeroes filled on left '000077'.
+
+(2)	>>>print('{0:.3f}'.format(4.5678))
+
+A) 0.3
+B) 4.000
+C) 4.567
+D) 4.3
+
+Ans:(C) The output is formatted to three digits after decimal point. Since the value after decimal contains 4 digits, it has been rounded off: 4.567
+
+(3)	>>>print('{0:.6f}'.format(3.4965))
+
+A) 3.496500
+B) 3.000000
+C) 3.49650
+D) 3.00000
+
+Ans:(A) The output is formatted to 6 digits after decimal point. Since the value after decimal contains 4 digits, zeroes have been added: 3.496500
+
+(4)	>>>print('{6:.3f}'.format(2.6131))
+
+A) 02.6131
+B) 2.61310
+C) 2.613
+D) error
+
+Ans:(D) Error is reported because the index in the format string in print() should start from O instead of 6 as there is only 1 argument for printing
+    IndexError: tuple index out of range
+
+(5)	>>>print('{0:1d}, {2:2.1f}, {1:2d} '.format(3,6,9.0))
+
+A) 3, 9.0,  6
+B) 3, 6,  9.0
+C) 9.0, 3,  6
+D) error
+
+Ans:(A) The output is formatted as follows: first integer argument justified to one digits (using 0:1d), second integer argument is justified to two digits (using 1:2d) and third floating point argument is justified to two places with one digit after decimal place (using 2:2.1f). Since the order given for printing is {0:1d}, {2:2.1f}, {1:2d} so third value is printed after first value and then the second value: 3, 9.0,  6
+
+
+Q. State whether the statements given below are True or False:
+
+(1)	The function input() takes an integer as input.
+(2) x,y = input() is as valid statement in Python.
+(3) We need to type cast in input value into an integer using function int().
+(4) We need to type cast in input value into a floating value using function float().
+(5)	We can input() a list of elements using a single input() function.
+(6) print('{O} and {1}'.format('abc',777)) prints abc as a string while 777 as an integer.
+(7) A number in the brackets refers to the position of the object passed into the str.format() method used in function print().
+(8) A function str.zfill() pads a numeric string on the right with zeros.
+(9) The result of '-7.77'.zfill(9) will be -000007.77
+(10) '-7.77'.zfill(-10) fills zeroes in right making a total count of 10 digits.
+
+Ans:
+(1)	False
+    By default, the function input() takes the value as a string.
+
+(2)	False
+    Only one variable should be on the left side as we are taking only one input through function input().
+
+(3) True
+    input() function takes the value as a string. Using function int() converts the value into an integer.
+
+(4)	True
+    input() function takes the value as a string. Using function float() converts the value into a floating value.
+
+(5)	False
+    Only one value can be taken as input using function input(). The input() function is to be used in a loop for reading values in a list.
+
+(6)	False
+    We need to put {ldl in order to print the value as an integer.
+
+(7)	True
+
+(8)	False
+    A function str.zfill() pads a numeric string on the left with zeros.
+
+(9)	False
+    The minus sign'-' will be counted in the total length 9.So the output will be -00007.77
+
+(10) False
+     It does not fill zeroes in the string and prints only the string as it is. This is because -10 in not a valid count of zeroes.

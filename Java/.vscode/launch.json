@@ -1,0 +1,18 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - rectangle",
+            "request": "launch",
+            "mainClass": "rectangle",
+            "projectName": "Java_e3306479"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - rectangle",
+            "request": "launch",
+            "mainClass": "Pattern.rectangle",
+            "projectName": "Java_e3306479"
+        }
+    ]
+}
